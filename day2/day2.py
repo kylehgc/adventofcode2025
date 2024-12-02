@@ -62,17 +62,16 @@ def is_valid_report_step_two(number_list: list[int]):
 
 
 
-print(is_valid_report_step_two([12, 14, 13, 10, 9]))
-# are_safe_step_one = 0
-# for report in reports:
-#   is_safe =  is_valid_report_step_one(report)
-#   if(is_safe):
-#     are_safe_step_one = are_safe_step_one + 1
+are_safe_step_one = 0
+for report in reports:
+  is_safe =  is_valid_report_step_one(report)
+  if(is_safe):
+    are_safe_step_one = are_safe_step_one + 1
 are_safe_step_two = 0
 for report in reports:
   is_safe = is_valid_report_step_two(report)
   if(is_safe):
     are_safe_step_two = are_safe_step_two + 1
-  else: 
-    print(report)
+
+print(are_safe_step_one)
 print(are_safe_step_two)
